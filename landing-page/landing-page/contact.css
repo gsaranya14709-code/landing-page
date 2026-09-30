@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia;
+    background-image: url("img/home_bg_1.png");
+    background-size: cover;
+    background-position: center;
+    padding: 30px 5%;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffc95c;
+}
+
+h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffc95c;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #ffc95c;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #123452;
+    color: white;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
