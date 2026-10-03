@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.72);
+    z-index: -1;
+}
+header {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff30;
+}
+header h2 {
+    letter-spacing: 2px;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+nav a:hover {
+    color: #f2c66d;
+}
+main {
+    padding: 70px 7%;
+}
+.small {
+    color: #f2c66d;
+    letter-spacing: 4px;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+h1 i {
+    color: #f2c66d;
+}
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, #000);
+}
+.card:hover img {
+    transform: scale(1.12);
+}
+.card:hover {
+    box-shadow: 0 15px 35px #000;
+}
+.card div {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    padding: 25px;
+}
+.card p {
+    color: #f2c66d;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+.card h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin: 8px 0 15px;
+}
+.card a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.card a:hover {
+    color: #f2c66d;
+}
+
+@media(max-width: 800px) {
+    nav {
+        display: none;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 550px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 45px;
+    }
+}

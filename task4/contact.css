@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f4f0e8;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h2 {
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a76d3d;
+}
+
+main {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    padding: 70px 10%;
+}
+
+section {
+    flex: 1;
+}
+
+section > p:first-child {
+    color: #a76d3d;
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h1 i {
+    color: #a76d3d;
+}
+
+.text {
+    color: #777;
+    line-height: 1.7;
+    margin: 30px 0;
+}
+section > p:not(.text):not(:first-child) {
+    margin: 15px 0;
+    color: #555;
+}
+form {
+    width: 430px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px #00000012;
+}
+form h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+input,textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-family: Arial;
+}
+input:focus,textarea:focus {
+    border-color: #a76d3d;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a76d3d;
+}
+
+@media(max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 50px;
+        padding: 60px 30px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}

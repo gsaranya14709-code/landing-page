@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: white;
+}
+
+header h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c47b35;
+}
+
+main {
+    display: flex;
+    min-height: calc(100vh - 75px);
+}
+
+.left {
+    width: 50%;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-concept-of-summer-travel-vacations-image_15746541.jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 8%;
+    position: sticky;
+    top: 0;
+    height: 109vh;
+}
+
+.left h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    line-height: 1.1;
+    margin-top: 120px;
+}
+
+.left p {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.right {
+    width: 50%;
+    background: white;
+    padding: 70px 10%;
+}
+
+.right h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+
+.sub {
+    color: #777;
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #c47b35;
+}
+
+form button {
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    background: #1e2b25;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #c47b35;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+    color: #888;
+}
+
+.google {
+    width: 100%;
+    padding: 13px;
+    background: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.google:hover {
+    background: #eee;
+}
+
+hr {
+    margin: 45px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.right h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+
+.right h3 + p {
+    color: #777;
+    margin: 8px 0 20px;
+}
+
+@media (max-width: 800px) {
+
+    main {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        height: 350px;
+        position: static;
+        padding: 50px;
+    }
+
+    .left h1 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    .right {
+        width: 100%;
+        padding: 50px;
+    }
+}
